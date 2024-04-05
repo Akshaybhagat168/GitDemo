@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 33.625 s <<< FAILURE! - in TestSuite
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 5.524 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step '"Incorrect email or password." message is displayed' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("{string} message is displayed")
+public void message_is_displayed(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+runScenario(cucumber.TestNGTestRunner)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "rahulshettyacademy.pageobjects.LandingPage.loginApplication(String, String)" because "this.landingPage" is null
+
